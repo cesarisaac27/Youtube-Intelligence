@@ -103,6 +103,7 @@ def retrieve_channel_AI_resume(internalChannelId: str):
 def search_channel_by_user(channel_user: str):
     """
     Endpoint searching channel by user
+    examples @NASA
     """
     dashboard = get_channel_dashboard_by_user(channel_user)
     if not dashboard:
