@@ -117,6 +117,7 @@ def generate_video_AI_response(internalVideoId: str):
 
     """
     Generate a video AI resume using internal video id
+    request to model
     """
 
 
