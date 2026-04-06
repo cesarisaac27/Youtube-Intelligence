@@ -1,0 +1,251 @@
+/* PAGE BACKGROUND */
+
+.page-bg{
+  background:linear-gradient(to bottom,#020617,#020617,#000000);
+  min-height:100vh;
+
+  padding:40px;
+
+  width:100%;        
+  max-width:none;  
+}
+
+/* SEARCH PANEL */
+
+.search-panel{
+  background:rgba(15,23,42,0.7);
+  backdrop-filter:blur(10px);
+  border:1px solid #334155;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+  max-width:720px;
+}
+
+/* SEARCH ROW */
+
+.search-row{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+/* INPUTS */
+
+.input{
+  background:#020617;
+  border:1px solid #334155;
+  padding:10px 14px;
+  border-radius:10px;
+  width:240px;
+  color:white;
+}
+
+/* SEARCH BUTTON 
+
+.btn-search{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  border-radius:999px;
+  padding:10px 28px;
+  font-weight:600;
+  cursor:pointer;
+  color:white;
+  transition:all .2s ease;
+}
+
+.btn-search:hover{
+  transform:scale(1.07);
+  box-shadow:0 6px 25px rgba(124,58,237,0.6);
+}
+*/
+/* MY CHANNELS BUTTON */
+
+.my-channels-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.btn-my-channels{
+  width:240px;
+  padding:12px;
+  border-radius:999px;
+  background:#334155;
+  color:white;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn-my-channels:hover{
+  background:#475569;
+  transform:scale(1.04);
+}
+
+/* STATUS */
+
+.status{
+  padding:10px 16px;
+  border-radius:8px;
+  margin-bottom:18px;
+}
+
+.success{
+  background:rgba(16,185,129,0.15);
+  border:1px solid #10b981;
+}
+
+.error{
+  background:rgba(239,68,68,0.15);
+  border:1px solid #ef4444;
+}
+
+/* GRID FIX */
+
+.grid{
+  justify-items:center;
+}
+
+/* CHANNEL CARD */
+
+.channel-card{
+  position:relative;
+  width:340px;
+  min-height: 240px;
+  background:#0b1120;
+  border:1px solid #334155;
+  border-radius:22px;
+  padding:28px 20px;
+  text-align:center;
+  cursor:pointer;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+
+  transition:all .25s ease;
+
+  overflow:hidden;
+}
+
+
+.channel-card:hover::before{
+  opacity:1;
+}
+
+.channel-card:hover{
+  transform:translateY(-8px) scale(1.05);
+  border-color:#7c3aed;
+  box-shadow:0 25px 60px rgba(124,58,237,0.45);
+}
+
+/* AVATAR */
+
+.channel-avatar{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+
+  border:3px solid transparent;
+
+  background:
+    linear-gradient(#0b1120,#0b1120) padding-box,
+    linear-gradient(135deg,#7c3aed,#6366f1) border-box;
+
+  transition:transform .25s ease;
+}
+
+.channel-card:hover .channel-avatar{
+  transform:scale(1.07);
+}
+
+/* CHANNEL TITLE */
+
+.channel-title{
+  font-size:17px;
+  font-weight:600;
+  color:#f1f5f9;
+}
+
+/* STATS */
+
+.channel-stats{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  margin-top:14px;
+  font-size:12px;
+  color:#94a3b8;
+}
+
+.channel-stats div{
+  flex:1;
+}
+
+.stat-number{
+  color:#c4b5fd;
+  font-weight:700;
+  font-size:16px;
+}
+
+
+/* MENU */
+
+.card-menu{
+  position:absolute;
+  top:10px;
+  right:14px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* DROPDOWN */
+
+.menu-dropdown{
+  position:absolute;
+  top:36px;
+  right:10px;
+
+  background:#020617;
+  border:1px solid #334155;
+
+  border-radius:10px;
+  width:150px;
+
+  overflow:hidden;
+
+  box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+.menu-dropdown div{
+  padding:10px 14px;
+  cursor:pointer;
+  font-size:13px;
+  color:#e2e8f0;
+}
+
+.menu-dropdown div:hover{
+  background:#1e293b;
+}
+
+/* CARD ANIMATION */
+
+.channel-card{
+  animation:cardFade .4s ease forwards;
+}
+
+@keyframes cardFade{
+  from{
+    opacity:0;
+    transform:translateY(12px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+*{
+  box-sizing:border-box;
+}
