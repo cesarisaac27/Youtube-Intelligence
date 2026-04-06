@@ -100,4 +100,4 @@ It combines the **YouTube Data API** with **AI models** to generate meaningful i
 
 ---
 
-This project is open-source and available under the MIT License.
+This project is open-source
