@@ -13,17 +13,20 @@ http://127.0.0.1:8000/docs
 Start FastApi app - YoutubeAnalytics 
 """
 app = FastAPI(
-    title="YouTube Analytics",
+    title="YouTube Intellligence",
     version="1.0.0"
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+def read_root():
+    return {"msg": "API funcionando"}
 
 app.include_router(channels_router)
 app.include_router(videos_router)
