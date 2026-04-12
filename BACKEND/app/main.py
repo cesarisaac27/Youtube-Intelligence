@@ -8,7 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 python -m uvicorn main:app --reload
 python -m uvicorn app.main:app --reload
 http://127.0.0.1:8000/docs
-
+retirados de env 
+HOST=db.nxzprogsovnfpogcxhev.supabase.co
+PORT=5432
 
 Start FastApi app - YoutubeAnalytics 
 """
