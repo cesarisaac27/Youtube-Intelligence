@@ -2,7 +2,7 @@ import os
 import requests
 from datetime import datetime
 
-from app.services.AI_response_normalizer import _fix_trailing_commas, _fix_missing_commas, _extract_json
+from ..services.AI_response_normalizer import _fix_trailing_commas, _fix_missing_commas, _extract_json
 
 AI_TOKEN = os.getenv("YOUTUBE_AI_TOKEN")
 API_URL = os.getenv("API_AI_URL")

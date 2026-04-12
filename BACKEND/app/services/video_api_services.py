@@ -1,11 +1,11 @@
 import requests
-from app.core.config import settings
-from app.crud.videos_repository import save_statistics, save_video, get_internalChannelId
-from app.crud.channels_repository import save_channel
-from app.services.channel_api_services import map_channel_to_summary
-from app.services.video_normalizer import parse_iso_duration, parse_datetime
+from ..core.config import settings
+from ..crud.videos_repository import save_statistics, save_video, get_internalChannelId
+from ..crud.channels_repository import save_channel
+from ..services.channel_api_services import map_channel_to_summary
+from ..services.video_normalizer import parse_iso_duration, parse_datetime
 from datetime import datetime
-from app.services.channel_api_services import get_channels_details
+from ..services.channel_api_services import get_channels_details
 from fastapi import APIRouter, HTTPException
 
 YOUTUBE_API_KEY = settings.YOUTUBE_API_KEY

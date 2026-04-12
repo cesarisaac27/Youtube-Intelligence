@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
-from app.crud.channels_repository import get_all_channels, delete_channel, get_channel_existing_AI_overview
-from app.services.channel_service import get_channel_dashboard_by_user, get_channel_summary, get_channel_dashboard_by_name, generate_AI_response
-from app.schemas.channel import ChannelSummary, ChannelAIAnalysis, ChannelListItem
+from ..crud.channels_repository import get_all_channels, delete_channel, get_channel_existing_AI_overview
+from ..services.channel_service import get_channel_dashboard_by_user, get_channel_summary, get_channel_dashboard_by_name, generate_AI_response
+from ..schemas.channel import ChannelSummary, ChannelAIAnalysis, ChannelListItem
 
 router = APIRouter(prefix="/channels", tags=["Channels"])
 

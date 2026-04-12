@@ -1,7 +1,7 @@
-from app.crud.channels_repository import get_channel_by_id, get_channel_by_name, save_channel, save_channel_AI_response, get_channel_by_user
-from app.schemas.channel import ChannelSummary, ChannelInfo, ChannelMetrics, ChannelDashboard
-from app.services.channel_api_services import fetch_official_channel_by_name2, fetch_official_channel_by_user
-from app.services.AI_channel_service import generate_channel_AI_analysis
+from ..crud.channels_repository import get_channel_by_id, get_channel_by_name, save_channel, save_channel_AI_response, get_channel_by_user
+from ..schemas.channel import ChannelSummary, ChannelInfo, ChannelMetrics, ChannelDashboard
+from ..services.channel_api_services import fetch_official_channel_by_name2, fetch_official_channel_by_user
+from ..services.AI_channel_service import generate_channel_AI_analysis
 from fastapi import HTTPException
 
 def get_channel_summary(channel_id: str) -> ChannelSummary | None:

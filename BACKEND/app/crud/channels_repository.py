@@ -1,4 +1,4 @@
-from app.database import get_connection
+from ..database import get_connection
 from psycopg2.extras import RealDictCursor
 from datetime import datetime
 import json

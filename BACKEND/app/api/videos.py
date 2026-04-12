@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException
-from app.services.video_service import get_channel_videos, process_top_videos, refresh_all_videos_stats
-from app.services.video_api_services import fetch_video_stats, fetch_single_video
-from app.services.video_normalizer import  normalize_video_overview, normalize_stadistics_snapshots
-from app.schemas.video import VideoListResponse, TopVideosResponse, VideoOverviewResponse, VideoStats, VideoAIAnalysis
-from app.crud.videos_repository import get_video_existing_AI_overview, get_youtube_videoID, delete_video, get_video_overview, get_full_stadistics_snapshots, save_video_AI_response
-from app.services.video_service import generate_video_AI_response, get_video_id_parsing_url
+from ..services.video_service import get_channel_videos, process_top_videos, refresh_all_videos_stats
+from ..services.video_api_services import fetch_video_stats, fetch_single_video
+from ..services.video_normalizer import  normalize_video_overview, normalize_stadistics_snapshots
+from ..schemas.video import VideoListResponse, TopVideosResponse, VideoOverviewResponse, VideoStats, VideoAIAnalysis
+from ..crud.videos_repository import get_video_existing_AI_overview, get_youtube_videoID, delete_video, get_video_overview, get_full_stadistics_snapshots, save_video_AI_response
+from ..services.video_service import generate_video_AI_response, get_video_id_parsing_url
 from typing import List
 
 router = APIRouter(prefix="/videos", tags=["Videos"])

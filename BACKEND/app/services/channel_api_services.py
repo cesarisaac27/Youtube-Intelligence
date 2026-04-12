@@ -1,8 +1,8 @@
 import os
 import requests
 from datetime import datetime
-from app.schemas.channel import ChannelSummary
-from app.core.config import settings
+from ..schemas.channel import ChannelSummary
+from ..core.config import settings
 
 YOUTUBE_API_KEY = settings.YOUTUBE_API_KEY
 BASE_URL = "https://www.googleapis.com/youtube/v3"

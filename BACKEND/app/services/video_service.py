@@ -1,9 +1,9 @@
-from app.crud.videos_repository import get_videos_by_channel_id,save_video_AI_response, save_video, save_statistics, get_video_overview
-from app.schemas.video import VideoListResponse, VideoSummary
-from app.crud.channels_repository import get_channel_by_id
-from app.services.video_api_services import fetch_channel_videos, fetch_video_stats
-from app.services.video_normalizer import normalize_video
-from app.services.AI_video_service import generate_video_AI_analysis
+from ..crud.videos_repository import get_videos_by_channel_id,save_video_AI_response, save_video, save_statistics, get_video_overview
+from ..schemas.video import VideoListResponse, VideoSummary
+from ..crud.channels_repository import get_channel_by_id
+from ..services.video_api_services import fetch_channel_videos, fetch_video_stats
+from ..services.video_normalizer import normalize_video
+from ..services.AI_video_service import generate_video_AI_analysis
 from datetime import datetime
 from fastapi import HTTPException
 from typing import List
