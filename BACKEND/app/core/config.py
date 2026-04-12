@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     YOUTUBE_AI_TOKEN: Optional[str] = None
     API_AI_URL: Optional[str] = None
     API_AI_MODEL: Optional[str] = None
+    VITE_API_URL=Optional[str] = None
 
     #Database rest
     PROJECT_URL: str
