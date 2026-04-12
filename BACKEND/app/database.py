@@ -12,6 +12,8 @@ HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
 DBNAME = os.getenv("DBNAME")
 
+print("HOST")
+
 
 # Connect to the database
 
