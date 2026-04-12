@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from BACKEND.app.api.channels import router as channels_router
-from BACKEND.app.api.videos import router as videos_router 
+from .api.channels import router as channels_router
+from .api.videos import router as videos_router 
 from fastapi.middleware.cors import CORSMiddleware
 
 
